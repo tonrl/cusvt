@@ -71,7 +71,6 @@ main {
 .hover-text {
   font-family: Arial, sans-serif;
   font-size: 60px;
-  text-align: left;
   transition: all 0.3s ease; /* Optional: Adds a smooth transition effect */
 }
 
@@ -119,6 +118,9 @@ main {
 
 .center-text {
   text-align: center;
+}
+.left-text {
+  text-align: left;
 }
 
 footer {
