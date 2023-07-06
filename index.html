@@ -53,11 +53,16 @@
             </div>
           </main>
           <div class="cookie-banner">
+            <h2>We use Cookies</h2>
             <p>Your personal data will be processed and information from your device (cookies, unique identifiers, and other device data) may be stored by, accessed by and shared with third party vendors, or used specifically by this site.<a href="./privacy">cookie policy</a></p>.
-            <button class="accept-button" onclick="acceptCookies()">Got it!</button>
+            <p>You can always block cookies using ad-block</p>
+            <button class="accept-button" onclick="acceptCookies()">Concent</button>
             <button class="accept-button" onclick="customizeCookies()">Customize</button>
             <div id="customize-dialog" style="display: none;">
               <h2>Customize Cookies</h2>
+              <label>
+                <input type="checkbox" id="analytics-checkbox" checked> 
+              </label>
               <label>
                 <input type="checkbox" id="analytics-checkbox" checked> Analytics
               </label>
