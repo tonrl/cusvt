@@ -1,9 +1,13 @@
-document.querySelector('.read-more').addEventListener('click', function() {
-    var content = this.parentNode;
-    content.classList.toggle('show-more');
-    if (content.classList.contains('show-more')) {
-      this.innerText = 'Read less';
+function toggleContent() {
+    var extraContent = document.getElementById("extraContent");
+    var readMoreBtn = document.getElementById("readMoreBtn");
+    
+    if (extraContent.classList.contains("hide")) {
+      extraContent.classList.remove("hide");
+      readMoreBtn.innerHTML = "Read Less";
     } else {
-      this.innerText = 'Read more';
+      extraContent.classList.add("hide");
+      readMoreBtn.innerHTML = "Read More";
     }
-  });
+  }
+  
