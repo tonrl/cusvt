@@ -6,6 +6,7 @@
         <link rel="icon" href="./images/logo.png" type="image/x-icon">
         <link rel="stylesheet" type="text/css" href="./styles-base.css">
         <link rel="stylesheet" type="text/css" href="./css/coki.css">
+        <link rel="stylesheet" type="text/css" href="./css/drop.css">
         <script src="./script/drop.js"></script>
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-SGYMJDC14B"></script>
@@ -55,18 +56,24 @@
           <div class="cookie-banner">
             <h2>Cusvt use Cookies</h2>
             <div class="foldable">
-                <p><button class="foldable-button">=</button> Read More</p>
+                <button class="foldable-button">=</button><p> Read More</p>
                 <div class="foldable-content">
-                    <p>Your personal data will be processed and information from your device (cookies, unique identifiers, and other device data) may be stored by, accessed by and shared with third party vendors, or used specifically by this site.<a href="./privacy">cookie policy</a></p>.
+                    <div class="content">
+                        <p>Your personal data will be processed and information from your device (cookies, unique identifiers, and other device data) may be stored by, accessed by and shared with third party vendors, or used specifically by this site.<a href="./privacy">cookie policy</a></p>
+                    </div>
                 </div>
             </div>
+
+
+
+
             <p>You can always block cookies using ad-block</p>
             <button class="accept-button" onclick="acceptCookies()">Concent</button>
             <button class="accept-button" onclick="customizeCookies()">Customize</button>
             <div id="customize-dialog" style="display: none;">
               <h2>Customize Cookies</h2>
               <label>
-                <input type="checkbox" id="analytics-checkbox" checked> 
+                <input type="checkbox" id="analytics-checkbox" checked> Essential
               </label>
               <label>
                 <input type="checkbox" id="analytics-checkbox" checked> Analytics

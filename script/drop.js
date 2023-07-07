@@ -1,13 +1,11 @@
-function toggleContent() {
-    var extraContent = document.getElementById("extraContent");
-    var readMoreBtn = document.getElementById("readMoreBtn");
-    
-    if (extraContent.classList.contains("hide")) {
-      extraContent.classList.remove("hide");
-      readMoreBtn.innerHTML = "Read Less";
-    } else {
-      extraContent.classList.add("hide");
-      readMoreBtn.innerHTML = "Read More";
+document.addEventListener('DOMContentLoaded', function() {
+    const foldableButtons = document.querySelectorAll('.foldable-button');
+    const foldableContents = document.querySelectorAll('.foldable-content');
+  
+    for (let i = 0; i < foldableButtons.length; i++) {
+      foldableButtons[i].addEventListener('click', function() {
+        foldableContents[i].classList.toggle('open');
+      });
     }
-  }
+  });
   
