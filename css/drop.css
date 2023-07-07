@@ -1,8 +1,20 @@
-.more-text {
-    display: none;
+.foldable-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
   }
   
-.show-more .more-text {
-    display: block;
+.foldable-content.open {
+    max-height: 50%; /* Adjust this value to your desired maximum height */
 }
-  
+.foldable-button {
+    padding: 10px 20px;
+    background-color: #eaeaea;
+    color: #000000;
+    font-size: 16px;
+    border-radius: 4px;
+  }
+  .foldable-button::after {
+    display: inline-block;
+    transition: transform 0.2s ease-out;
+  }
