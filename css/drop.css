@@ -15,7 +15,7 @@
 }
   
 .foldable-content.open {
-    max-height: 100px; /* Adjust this value to your desired maximum height */
+    max-height: 500px; /* Adjust this value to your desired maximum height */
 }
 
 .foldable-button {
