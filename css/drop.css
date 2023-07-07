@@ -1,6 +1,6 @@
 .content {
     padding: 5px;
-    margin: 1px auto 1px; /* Adjust the top and bottom margin to create space for the fixed header */
+    margin: 2px auto 2px; /* Adjust the top and bottom margin to create space for the fixed header */
     max-width: 95%;
     background-color: #f8faef;
     border-radius: 5px;
