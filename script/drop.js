@@ -1,11 +1,9 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const foldableButtons = document.querySelectorAll('.foldable-button');
-    const foldableContents = document.querySelectorAll('.foldable-content');
-  
-    for (let i = 0; i < foldableButtons.length; i++) {
-      foldableButtons[i].addEventListener('click', function() {
-        foldableContents[i].classList.toggle('open');
-      });
+document.querySelector('.read-more').addEventListener('click', function() {
+    var content = this.parentNode;
+    content.classList.toggle('show-more');
+    if (content.classList.contains('show-more')) {
+      this.innerText = 'Read less';
+    } else {
+      this.innerText = 'Read more';
     }
   });
-  
