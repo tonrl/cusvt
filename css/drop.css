@@ -1,0 +1,8 @@
+.more-text {
+    display: none;
+  }
+  
+.show-more .more-text {
+    display: block;
+}
+  
