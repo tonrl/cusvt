@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
 body {
-  font-family: sans-serif;
+  font-family: sans-serif, Ubuntu ;
   background-color: rgb(213, 220, 255);
   margin: 0 auto;
   padding: 0;
@@ -190,4 +192,123 @@ footer {
   border-radius: 4px;
   cursor: pointer;
   text-decoration: none; /* Remove underline */
+}
+
+
+
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#terminal {
+  width: 70vw;
+  height: 65vh;
+  box-shadow: 2px 4px 10px rgba(0,0,0,0.5);
+}
+#terminal__bar {
+  display: flex;
+  width: 100%;
+  height: 30px;
+  align-items: center;
+  padding: 0 8px;
+  box-sizing: border-box;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background: linear-gradient(#504b45 0%,#3c3b37 100%);
+}
+#bar__buttons {
+  display: flex;
+  align-items: center;
+}
+.bar__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin-right: 5px;
+  font-size: 8px;
+  height: 12px;
+  width: 12px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 100%;
+  background: linear-gradient(#7d7871 0%, #545454 100%);
+  text-shadow: 0px 1px 0px rgba(255,255,255,0.2);
+  box-shadow: 0px 0px 1px 0px #41403A, 0px 1px 1px 0px #474642;
+}
+.bar__button:hover {
+  cursor: pointer;
+}
+.bar__button:focus {
+  outline: none;
+}
+#bar__button--exit {
+  background: linear-gradient(#f62a2a 0%, #de4c12 100%);
+  background-clip: padding-box;
+}
+#bar__user {
+  color: #d5d0ce;
+  margin-left: 6px;
+  font-size: 14px;
+  line-height: 15px;
+}
+#terminal__body {
+  background: rgba(8, 4, 25, 0.631);
+  font-family: 'Ubuntu Mono';
+  height: calc(100% - 30px);
+  padding-top: 2px;
+  margin-top: -1px;
+}
+#terminal__prompt {
+  display: flex;
+}
+#terminal__prompt--user {
+  color: #ff0000;
+}
+#terminal__prompt--location {
+  color: #0066ff;
+  margin-right: 9px;
+}
+#terminal__prompt--location2 {
+  color: #02ff28;
+  margin-left: 9px;
+}
+#terminal__prompt--bling {
+  color: #afafaf;
+}
+#terminal__prompt--respons {
+  color: #ffffff;
+}
+#terminal__prompt--cursor {
+  display: block;
+  height: 17px;
+  width: 8px;
+  margin-left: 9px;
+  animation: blink 1200ms linear infinite;
+}
+@keyframes blink {
+  0% {
+    background: #ffffff;
+  }
+  49% {
+    background: #ffffff;
+  }
+  60% {
+    background: transparent;
+  }
+  99% {
+    background: transparent;
+  }
+  100% {
+    background: #ffffff;
+  }
+}
+@media (max-width: 600px) {
+  #terminal {
+    max-height: 90%;
+    width: 90%;
+  }
 }

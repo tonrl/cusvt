@@ -43,16 +43,37 @@
               </nav>
           </nav>
           <main>
-            <div class="intron">
-                <h1 class="hover-text">Hi!</h1>
-            </div>
-            <div class="center-text">
-                <h1 class="hover-text">I'M TOSHIKI!</h1>
-                <h2>Congratulations!</h2>
-                <h2>You are Now Out of</h2>
-                <h2 class="hover-small">Matrix</h2>
-                <a class="red-button" href="./mv">Red</a>
-                <a class="blue-button" href="javascript:history.back()">Blue</a>
+            <div id="container">
+              <div id="terminal">
+                <!-- Terminal Bar -->
+                <section id="terminal__bar">
+                  <div id="bar__buttons">
+                    <button class="bar__button" id="bar__button--exit">&#10005;</button>
+                    <button class="bar__button">&#9472;</button>
+                    <button class="bar__button">&#9723;</button>
+                  </div>
+                  <p id="bar__user">root@cusvt: /root</p>
+                </section>
+                <!-- Terminal Body -->
+                <section id="terminal__body">
+                  <div id="terminal__prompt">
+                      <span id="terminal__prompt--user">root@Cusvt:</span>
+                      <span id="terminal__prompt--location">/root:</span>
+                      <span id="terminal__prompt--bling">#</span>
+                      <span id="terminal__prompt--location2">whoami</span>
+                  </div>
+                  <div id="terminal__prompt">
+                      <span id="terminal__prompt--respons">My Name is Toshiki</span>
+                  </div>
+                  <div id="terminal__prompt">
+                      <span id="terminal__prompt--user">root@Cusvt:</span>
+                      <span id="terminal__prompt--location">/root:</span>
+                      <span id="terminal__prompt--bling">#</span>
+                      <span id="terminal__prompt--location2">whoami</span>
+                      <span id="terminal__prompt--cursor"></span>
+                  </div>
+                </section>
+              </div>
             </div>
           </main>
           <div class="cookie-banner">
