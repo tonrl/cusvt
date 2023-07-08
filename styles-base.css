@@ -203,3 +203,12 @@ footer {
 .text-ti {
   line-height: 4px;
 }
+.content2 {
+  text-align: left;
+  padding: 20px;
+  margin: 160px auto 20px; /* Adjust the top and bottom margin to create space for the fixed header */
+  max-width: 800px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
