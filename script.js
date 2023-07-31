@@ -61,7 +61,7 @@ function handleCommand(event) {
 
 function showResponse(response) {
     terminalElement.innerHTML += `<div class="regular">${response}</div>`;
-    terminalElement.innerHTML += '<div class="input-line"><span class="prompt">root@mywebsite:~#</span> <input type="text" onkeydown="handleCommand(event)"></div>';
+    terminalElement.innerHTML += '<div class="input-line"><span class="prompt">root@cusvt:~#</span> <input type="text" onkeydown="handleCommand(event)"></div>';
 }
 
 simulateBootProcess();
