@@ -1,3 +1,6 @@
+//This is the script for the Terminal like About page
+//If you are viewing and found the issues, please let me know
+//This website is only for educational purposes, misuase of any kind of contents material is strictlly prohibited
 const terminalElement = document.getElementById('terminal');
 const bootMessages = [
     { text: "Starting Apply Kernel Variables..", type: "regular" },
