@@ -41,7 +41,7 @@ function handleCommand(event) {
                 showResponse("Available commands:<br>whoami <br>question<br>home - Go home");
                 break;
             case "whoami":
-                showResponse("My Name is Toshiki");
+                showResponse("My Name is Toshiki <br>Welcome to My Website!");
                 break;
             case "question":
                 showResponse("This website was made to showcase my skills and share my knowledge with others.");
