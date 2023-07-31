@@ -11,22 +11,6 @@
          <!--mv experiment-->
          <link rel="stylesheet" type="text/css" href="./mv/style2.css">
         <!--mv experiment-->
-       <!-- Google tag (gtag.js) -->
-       <script async src="https://www.googletagmanager.com/gtag/js?id=G-RVNY3T3YS7"></script>
-       <script>
-       window.dataLayer = window.dataLayer || [];
-       function gtag(){dataLayer.push(arguments);}
-       gtag('js', new Date());
-       
-       gtag('config', 'G-RVNY3T3YS7');
-       </script>
-       <!--Goole ads-->
-       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3820132754337684"
-     crossorigin="anonymous"></script>
-        <!--cookie concent -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
-        <script src="./script/coki.js"></script>
-    </head>
     <body>
         <header>
             <div class="container">
@@ -46,88 +30,12 @@
               </nav>
           </nav>
          
-          <main>
-            <div id="container">
-              <div id="terminal">
-                <!-- Terminal Bar -->
-                <section id="terminal__bar">
-                  <div id="bar__buttons">
-                    <button class="bar__button" id="bar__button--exit">&#10005;</button>
-                    <button class="bar__button">&#9472;</button>
-                    <button class="bar__button">&#9723;</button>
-                  </div>
-                  <p id="bar__user">root@cusvt: /root</p>
-                </section>
-                <!-- Terminal Body -->
-                <section id="terminal__body">
-                  <div id="terminal__prompt">
-                      <span id="terminal__prompt--user">root@Cusvt:</span>
-                      <span id="terminal__prompt--location">/root:</span>
-                      <span id="terminal__prompt--bling">#</span>
-                      <span id="terminal__prompt--location2">whoami</span>
-                  </div>
-                  <div id="terminal__prompt">
-                      <span id="terminal__prompt--location">==></span>
-                      <span id="terminal__prompt--respons">Downloading Contents...</span>
-                  </div>
-                  <div id="terminal__prompt">
-                    <span id="terminal__prompt--respons">######################################################################### 100.0%</span>
-                  </div>
-                  <div id="terminal__prompt">
-                    <span id="terminal__prompt--respons">Hi!</span>
-                  </div>
-                  <div id="terminal__prompt">
-                    <span id="terminal__prompt--respons">I'm Toshiki!</span>
-                  </div>
-                  <div id="terminal__prompt">
-                    <span id="terminal__prompt--respons">Welcome to Cusvt!</span>
-                  </div>
-                  <div id="terminal__prompt">
-                      <span id="terminal__prompt--user">root@Cusvt:</span>
-                      <span id="terminal__prompt--location">/root:</span>
-                      <span id="terminal__prompt--bling">#</span>
-                      <span id="terminal__prompt--location2">cd /usr/home</span>
-                      <span id="terminal__prompt--cursor"></span>
-                  </div>
-                </section>
-              </div>
-            </div>
-          </main>
-          <canvas id="matrix"></canvas>
-          <script src="./mv/script.js"></script>
-          <div class="cookie-banner">
-            <div class="header">
-                <h2>Cusvt use Cookies</h2>
-            </div>
-            <div class="foldable">
-                <p><button class="foldable-button">=</button> Read More</p>
-                <div class="foldable-content">
-                    <div class="content">
-                        <p>Your personal data will be processed and information from your device (cookies, unique identifiers, and other device data) may be stored by, accessed by and shared with third party vendors, or used specifically by this site.</p>
-                        <p>By clicking "Cencent", you concent to our use of cookies. <a href="./privacy">Cookie policy</a></p>
-                    </div>
-                </div>
-            </div>
-            <p>(!) You can always block cookies using ad-block or with your Browser settings</p>
-            <p>(!) You can download privacy focued browsers like <a href="https://brave.com/">Brave Browser</a></p>
-            <button class="accept-button" onclick="acceptCookies()">Concent</button>
-            <button class="accept-button" onclick="customizeCookies()">Customize</button>
-            <div id="customize-dialog" style="display: none;">
-              <h2>Customize Cookies</h2>
-              <label>
-                <input type="checkbox" id="analytics-checkbox" checked> Essential
-              </label>
-              <label>
-                <input type="checkbox" id="analytics-checkbox" checked> Analytics
-              </label>
-              <br>
-              <label>
-                <input type="checkbox" id="preferences-checkbox" checked> Preferences
-              </label>
-              <br>
-              <button class="accept-button" onclick="saveCustomizedCookies()">OK</button>
-            </div>
-         </div>
+          <div class="terminal" id="terminal">
+            <script src="script.js"></script>
+        </div>
+
+
+        
           <footer>
             <div>
                 <p>&copy; 2023 Cusvt. All rights reserved.</p>

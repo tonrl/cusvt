@@ -1,0 +1,24 @@
+body {
+    background-color: #000;
+    color: #0f0;
+    font-family: "Courier New", monospace;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+.terminal {
+    margin: 50px auto;
+    padding: 10px;
+    border: 2px solid #0f0;
+    width: 80%;
+    height: 300px;
+    overflow-y: scroll;
+    background-color: #000;
+}
+.ok {
+    color: #0f0; /* Green color for [OK] messages */
+}
+
+.regular {
+    color: #fff; /* White color for regular messages */
+}
