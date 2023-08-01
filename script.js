@@ -3,7 +3,7 @@
 //This website is only for educational purposes, misuase of any kind of contents material is strictlly prohibited
 const terminalElement = document.getElementById('terminal');
 const bootMessages = [
-    { text: "Starting Apply Kernel Variables..", type: "regular" },
+    { text: "Apply Kernel Variables..", type: "regular" },
     { text: "[OK] Started Journal Service.", type: "ok" },
     { text: "[OK] Mounted FUSE Control File System.", type: "ok" },
     { text: "[OK] Mounted Kernel Configuration File System.", type: "ok" },
@@ -13,6 +13,16 @@ const bootMessages = [
     { text: "WELCOME TO CUSVT!", type: "regular" },
     { text: "TYPE HELP FOR MORE!", type: "regular" },
 ];
+
+function getCurrentTime() {
+    const now = new Date();
+    const hours = now.getHours().toString().padStart(2, '0');
+    const minutes = now.getMinutes().toString().padStart(2, '0');
+    const currentTime = `${hours}:${minutes}`;
+    return currentTime;
+}
+const currentTime = getCurrentTime();
+terminalElement.innerHTML += `<div class="regular">${currentTime} -!- Starting CUSVT....</div>`;
 
 const messageDelay = 500;
 
@@ -41,13 +51,16 @@ function handleCommand(event) {
 
         switch (command) {
             case "help":
-                showResponse("Available commands:<br>whoami <br>question<br>home - Go home");
+                showResponse("Available commands:<br>whoami <br>neofetch <br>question<br>home - Go home");
                 break;
             case "whoami":
                 showResponse("My Name is Toshiki <br>Welcome to My Website!");
                 break;
             case "question":
                 showResponse("This website was made to showcase my skills and share my knowledge with others.");
+                break;
+            case "neofetch":
+                showResponse("(__)<br>(oo)<br>/---------/ <br>   / | H3H3 || P");
                 break;
             case "home":
                 window.location.href = "index.html";
