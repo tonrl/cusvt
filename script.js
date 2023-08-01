@@ -10,6 +10,9 @@ const bootMessages = [
     { text: "[OK] Finished Apply Kernel Variables.", type: "ok" },
     { text: "[OK] Finished udev Coldplug all Devices.", type: "ok" },
     { text: "[OK] Starting Flush Journal to Persistent Storage.", type: "ok" },
+    { text: "[ERROR]: Permission Denied", type: "error" },
+    { text: "[FATAL ERROR]: Yo!", type: "error" },
+    { text: "YOU DIDN'T SAY THE SPECIAL WORDS", type: "regular" },
     { text: "WELCOME TO CUSVT!", type: "regular" },
     { text: "TYPE HELP FOR MORE!", type: "regular" },
 ];
@@ -22,7 +25,7 @@ function getCurrentTime() {
     return currentTime;
 }
 const currentTime = getCurrentTime();
-terminalElement.innerHTML += `<div class="regular">${currentTime} -!- Starting CUSVT....</div>`;
+terminalElement.innerHTML += `<div class="regular">${currentTime} -!- Starting CUSVT - This might take time</div>`;
 
 const messageDelay = 500;
 
@@ -51,7 +54,7 @@ function handleCommand(event) {
 
         switch (command) {
             case "help":
-                showResponse("Available commands:<br>whoami <br>neofetch <br>question<br>home - Go home");
+                showResponse("Example commands:<br>whoami <br>neofetch <br>question<br>home - Go home");
                 break;
             case "whoami":
                 showResponse("My Name is Toshiki <br>Welcome to My Website!");
@@ -60,13 +63,22 @@ function handleCommand(event) {
                 showResponse("This website was made to showcase my skills and share my knowledge with others.");
                 break;
             case "neofetch":
-                showResponse("(__)<br>(oo)<br>/---------/ <br>   / | H3H3 || P");
+                showResponse("(__)<br>(oo)<br>/---------/ <br>   / | H3H3 || P <br>Look Behind OO");
+                break;
+            case "ls":
+                showResponse("Applications Downloads Music Desktop <br>Downloads secret.txt ");
+                break;
+            case "sudo su":
+                showResponse("Hmmm, What do you want??");
+                break;
+            case "cat secret.txt":
+                showResponse("Permission Denied: You cannot see my secret at this momenet lol");
                 break;
             case "home":
                 window.location.href = "index.html";
                 break;
             default:
-                showResponse("zsh: Command not found. Type 'help' to see available commands.");
+                showResponse("bash: Command not found. Type 'help' to see available commands.");
                 break;
         }
 

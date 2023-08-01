@@ -18,6 +18,10 @@ body {
 .ok {
     color: #0f0; /* Green color for [OK] messages */
 }
+.error {
+    color:crimson; /*Error message*/
+    text-align: left;
+}
 
 .regular {
     color: #fff; /* White color for regular messages */
