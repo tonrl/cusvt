@@ -27,4 +27,5 @@ body {
     color: #fff; /* White color for regular messages */
 }
 .normal {
+    color:rgb(0, 0, 0); /*text message*/
 }
