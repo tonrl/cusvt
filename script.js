@@ -53,7 +53,7 @@ function handleCommand(event) {
                 window.location.href = "index.html";
                 break;
             default:
-                showResponse("Command not found. Type 'help' to see available commands.");
+                showResponse("zsh: Command not found. Type 'help' to see available commands.");
                 break;
         }
 
