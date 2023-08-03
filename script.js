@@ -65,6 +65,9 @@ function handleCommand(event) {
             case "neofetch":
                 showResponse("(__)<br>(oo)<br>/---------/ <br>   / | H3H3 || P <br>Look Behind OO");
                 break;
+            case "Yo":
+                showResponse("Yo, yo, yo! Wassup~?");
+                break;   
             case "ls":
                 showResponse("Applications Downloads Music Desktop <br>Downloads secret.txt ");
                 break;
