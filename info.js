@@ -1,22 +1,16 @@
-// Function to fetch both IPv4 and IPv6 addresses
-function getIpAddresses() {
-    Promise.all([
-        fetch('https://api64.ipify.org?format=json').then(response => response.json()),
-        fetch('https://api64.ipify.org?format=json&ipv=6').then(response => response.json())
-    ])
-    .then(data => {
-        const ipv4Address = data[0].ip;
-        const ipv6Address = data[1].ip;
-        
-        document.getElementById('ipv4-address').textContent = ipv4Address;
-        document.getElementById('ipv6-address').textContent = ipv6Address;
-    })
-    .catch(error => {
-        console.error('Error fetching IP addresses:', error);
-        document.getElementById('ipv4-address').textContent = 'Error fetching IPv4';
-        document.getElementById('ipv6-address').textContent = 'Error fetching IPv6';
-    });
+// Function to fetch the user's IP address
+function getIpAddress() {
+    fetch('https://api64.ipify.org?format=json')
+        .then(response => response.json())
+        .then(data => {
+            const ipAddress = data.ip;
+            document.getElementById('ip-address').textContent = ipAddress;
+        })
+        .catch(error => {
+            console.error('Error fetching IP address:', error);
+            document.getElementById('ip-address').textContent = 'Error fetching IP';
+        });
 }
 
-// Call the function to fetch and display both IP addresses
-getIpAddresses();
+// Call the function to fetch and display the IP address
+getIpAddress();
