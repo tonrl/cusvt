@@ -1,96 +1,85 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>404 | Page not found</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="./images/logo.png" type="image/x-icon">
-        <link rel="stylesheet" type="text/css" href="./styles-base.css">
-        <link rel="stylesheet" type="text/css" href="./css/coki.css">
-        <link rel="stylesheet" type="text/css" href="./css/drop.css">
-        <script src="./script/drop.js"></script>
-       <!-- Google tag (gtag.js) -->
-       <script async src="https://www.googletagmanager.com/gtag/js?id=G-RVNY3T3YS7"></script>
-       <script>
-       window.dataLayer = window.dataLayer || [];
-       function gtag(){dataLayer.push(arguments);}
-       gtag('js', new Date());
-       
-       gtag('config', 'G-RVNY3T3YS7');
-       </script>
-       <!--cookie concent -->
-       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
-       <script src="./script/coki.js"></script>
-    </head>
-    <body>
-        <header>
-            <div class="container">
-                <h1><a href="./"><img src="./images/logo.png" alt="Logo" class="logo"></a> Cusvt</h1><p> | Learn & Develop for better future</p>
-            </div>
-        </header>
-        <nav>
-            <div class="container">
-              <ul>
-                <li><a href="./">Home</a></li>
-                <li><a href="./education">Education</a></li>
-                <li><a href="./about">About Me</a></li>
-                <li><a href="./privacy-policy">Privacy Policy</a></li>
-              </ul>
-            </div>
-          </nav>
-          <main>
-            <div class="error">
-                <h1>404 Error | Page not found!</h1>
-                <h2>It is olay Just go back and try again!</h2>
-                <a class="home-button" href="javascript:history.back()">Back</a>
-            </div>
-          </main>
+<head>
+  <link rel="icon" href="secret.png" type="image/x-icon">
+  <title>404 - Page Not Found</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
 
+    h1 {
+      font-size: 35px;
+    }
 
-          <!--cookie concent from Below, Do not Delete-->
-          <!--cookie concent -->
-          <div class="cookie-banner">
-            <div class="header">
-                <h2>Cusvt use Cookies</h2>
-            </div>
-            <div class="foldable">
-                <p><button class="foldable-button">=</button> Read More</p>
-                <div class="foldable-content">
-                    <div class="content">
-                        <p>Your personal data will be processed and information from your device (cookies, unique identifiers, and other device data) may be stored by, accessed by and shared with third party vendors, or used specifically by this site.</p>
-                        <p>By clicking "Cencent", you concent to our use of cookies. <a href="./privacy">Cookie policy</a></p>
-                    </div>
-                </div>
-            </div>
-            <p>(!) You can always block cookies using ad-block or with your Browser settings</p>
-            <p>(!) You can download privacy focued browsers like <a href="https://brave.com/">Brave Browser</a></p>
-            <button class="accept-button" onclick="acceptCookies()">Concent</button>
-            <button class="accept-button" onclick="customizeCookies()">Customize</button>
-            <div id="customize-dialog" style="display: none;">
-              <h2>Customize Cookies</h2>
-              <label>
-                <input type="checkbox" id="analytics-checkbox" checked> Essential
-              </label>
-              <label>
-                <input type="checkbox" id="analytics-checkbox" checked> Analytics
-              </label>
-              <br>
-              <label>
-                <input type="checkbox" id="preferences-checkbox" checked> Preferences
-              </label>
-              <br>
-              <button class="accept-button" onclick="saveCustomizedCookies()">OK</button>
-            </div>
-         </div>
-          <div class="blank-part"></div>
-          <div class="blank-part"></div>
-          <div class="blank-part"></div>
-          <div class="blank-part"></div>
-          <div class="blank-part"></div>
-          <div class="blank-part"></div>
-          <footer>
-            <div>
-                <p>&copy; 2023 Cusvt. All rights reserved.</p>
-            </div>
-        </footer>
-    </body>
+    p {
+      font-size: 24px;
+    }
+
+    .bsod {
+      background-color: #000;
+      color: #fff;
+      padding: 20px;
+      display: inline-block;
+      border: 5px solid #00FFFF;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .error-code {
+      font-size: 100px;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    .error-message {
+      font-size: 30px;
+      margin: 20px 0;
+    }
+
+    .mysterious-symbol {
+      font-size: 150px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      color: #00FFFF;
+    }
+
+    .button-container {
+      margin-top: 40px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 20px;
+      background-color: #00FFFF;
+      color: #000;
+      border-radius: 20px;
+      text-decoration: none;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="bsod">
+    <h1>Oops!</h1>
+    <p class="error-code">404</p>
+    <p class="error-message">Seems like you've got lost! But don't worry, you can go back and find out what were the problem</p>
+    <p class="mysterious-symbol">?</p>
+    <div class="button-container">
+      <a class="button" href="javascript:history.back()">Go Back</a>
+      <a class="button" href="./">Home</a>
+    </div>
+    <p>Looking for something special? Clike the button below with your own risk!
+    </p>
+    <div class="button-container">
+        <a class="button" href="./">Here</a>
+    </div>
+  </div>
+</body>
 </html>
