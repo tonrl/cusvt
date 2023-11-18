@@ -34,6 +34,7 @@ body {
 @media only screen and (max-device-width: 1366px) {
     .parallax-1, .parallax-2, .parallax-3 {
       background-attachment: scroll;
+      min-height: 200px;
     }
 }
 .caption {
