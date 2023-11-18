@@ -1,85 +1,71 @@
 <!DOCTYPE html>
-<html>
+
+<html
+ 
+lang="en">
+
 <head>
-  <link rel="icon" href="secret.png" type="image/x-icon">
-  <title>404 - Page Not Found</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      background-color: #000;
-      color: #fff;
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 50px;
-    }
-
-    h1 {
-      font-size: 35px;
-    }
-
-    p {
-      font-size: 24px;
-    }
-
-    .bsod {
-      background-color: #000;
-      color: #fff;
-      padding: 20px;
-      display: inline-block;
-      border: 5px solid #00FFFF;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    }
-
-    .error-code {
-      font-size: 100px;
-      font-weight: bold;
-      margin: 0;
-    }
-
-    .error-message {
-      font-size: 30px;
-      margin: 20px 0;
-    }
-
-    .mysterious-symbol {
-      font-size: 150px;
-      margin-top: 20px;
-      margin-bottom: 20px;
-      color: #00FFFF;
-    }
-
-    .button-container {
-      margin-top: 40px;
-    }
-
-    .button {
-      display: inline-block;
-      padding: 10px 20px;
-      font-size: 20px;
-      background-color: #00FFFF;
-      color: #000;
-      border-radius: 20px;
-      text-decoration: none;
-      margin: 10px;
-    }
-  </style>
+    <title>404 Page not found</title>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/logo.png" type="image/x-icon">    
+    <link rel="stylesheet" href="style.css">
+    <script src="scroll.js"></script>
+    <style>
+        .parallax-1 {
+            opacity: 0.4;
+        }
+    </style>
 </head>
 <body>
-  <div class="bsod">
-    <h1>Oops!</h1>
-    <p class="error-code">404</p>
-    <p class="error-message">Seems like you've got lost! But don't worry, you can go back and find out what were the problem</p>
-    <p class="mysterious-symbol">?</p>
-    <div class="button-container">
-      <a class="button" href="javascript:history.back()">Go Back</a>
-      <a class="button" href="./">Home</a>
+    <header>
+        <div class="container">
+            <h1><a href="./"><img src="./images/logo.png" alt="Logo" class="logo"></a></h1>
+        </div>
+    <nav>
+        <nav>
+            <div class="container">
+              <ul>
+                <li><a href="./">Home</a></li>
+                <li><a href="./education">Education</a></li>
+                <li><a href="./about">About Me</a></li>
+                <li><a href="./privacy-policy">Privacy Policy</a></li>
+              </ul>
+            </div>
+          </nav>
+      </nav>
+    </header>
+    <div class="parallax-1">
+        <div class="caption">
+            <span class="border">404 - Page not found</span>
+        </div>
     </div>
-    <p>Looking for something special? Clike the button below with your own risk!
-    </p>
-    <div class="button-container">
-        <a class="button" href="./">Here</a>
+    <div class="dark-color">
+        <div class="center-text">
+            <h1>404</h1>
+            <h2>Page Not found</h2>
+            <h2>Page you are looking for might have been removed or temporarily unavaurable</h2>
+        </div>
+        <form class="center-text">
+            <input type="text" name="search" placeholder="Search..">
+        </form>
+        <div class="blank-part"></div>
     </div>
-  </div>
+    <div class="blank-part"></div>
+    <div class="blank-part"></div>
+    <!--Main Contents-->
+    <section class="services">
+    </section>
+    <div class="light-color">
+        <div class="parallax-3"></div>
+        <section class="contact">
+        </section>
+    </div>
+    <footer>
+        <div class="contact">
+            <a href="https://github.com/Joint55internal"><img src="./images/github-mark.png" alt="Logo" class="github-link"></a>
+            <a href="https://youtube.com/@Cusvt?si=WW0MH8QlssE1f9pr"><img src="./images/youtubelink.png" alt="Logo" class="github-link"></a>
+        </div>
+        <p>&copy; Cusvt. All Rights Reserved</p>
+    </footer>
 </body>
 </html>

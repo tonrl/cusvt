@@ -1,65 +1,90 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Cusvt | Home</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="./images/logo.png" type="image/x-icon">
-        <link rel="stylesheet" type="text/css" href="./index.css">
-        <link rel="stylesheet" type="text/css" href="./css/coki.css">
-        <link rel="stylesheet" type="text/css" href="./css/drop.css">
-        <script src="./script/drop.js"></script>
-        <script src="info.js"></script>
-       <!-- Google tag (gtag.js) -->
-    <body>
-        <header>
-            <div class="container">
-                <h1><a href="./"><img src="./images/logo.png" alt="Logo" class="logo"></a> Cusvt</h1><p> | Learn & Develop for better future</p>
-            </div>
-        </header>
+
+<html
+ 
+lang="en">
+
+<head>
+    <title>Cusvt | Home</title>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/logo.png" type="image/x-icon">    
+    <link rel="stylesheet" href="style.css">
+    <script src="scroll.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="./"><img src="./images/logo.png" alt="Logo" class="logo"></a></h1>
+        </div>
+    <nav>
         <nav>
-            <nav>
-                <div class="container">
-                  <ul>
-                    <li><a href="./">Home</a></li>
-                    <li><a href="./education">Education</a></li>
-                    <li><a href="./about">About Me</a></li>
-                    <li><a href="./privacy-policy">Privacy Policy</a></li>
-                  </ul>
-                </div>
-              </nav>
+            <div class="container">
+              <ul>
+                <li><a href="./">Home</a></li>
+                <li><a href="./education">Education</a></li>
+                <li><a href="./about">About Me</a></li>
+                <li><a href="./privacy-policy">Privacy Policy</a></li>
+              </ul>
+            </div>
           </nav>
-          <main>
-            <p>Your IP address is: <span id="ip-address">Loading...</span></p>
-          <div class="center-text">
-                    <h1 class="hover-text">WELCOME!</h1>
-                  </div>
-          </div>
-            <div class="center-text">
-                <h1>Thank you for visiting this website</h1>
-                <h2>Are you interested in exploring outside </h2><h2 class="hover-small">the Matrix</h2>
-                <h3>If so, Please choose the color</h3>
-                <a class="red-button" href="./mv">Red</a>
-                <a class="blue-button" href="https://youtu.be/dQw4w9WgXcQ">Blue</a>
-            </div>
-            <div class="content2">
-              <h2>This website is made to share you nunber of interesting things</h2>
-              <h2>...</h2>
-          </div>
-          </main>
-         
-            </div>
-         </div>
-          <div class="blank-part"></div>
-          <div class="blank-part"></div>
-          <div class="blank-part"></div>
-          <div class="blank-part"></div>
-          <div class="blank-part"></div>
-          <div class="blank-part"></div>
-          <div class="blank-part"></div>
-          <footer>
-            <div>
-                <p>&copy; 2023 Cusvt. All rights reserved.</p>
-            </div>
-        </footer>
-    </body>
+      </nav>
+    </header>
+    <div class="parallax-1">
+        <div class="caption">
+            <span class="border">Welcome!</span>
+        </div>
+    </div>
+    <div class="dark-color">
+        <div class="center-text">
+            <h3>Current date and time:</h3>
+            <h3 id="demo"></h3>
+            <script>
+            const d = new Date();
+            document.getElementById("demo").innerHTML = d;
+            </script>
+            <h1>Welcome to my website CUSVT.com! </h1>
+        </div>
+        <form class="center-text">
+            <input type="text" name="search" placeholder="Search..">
+        </form>
+        <div class="blank-part"></div>
+    </div>
+    <div class="blank-part"></div>
+    <div class="blank-part"></div>
+    <!--Main Contents-->
+    <section class="services">
+        <div class="service-item">
+            <a href="./matrix"><img src="./images/matrix.jpeg" alt="Matrix"></a>
+            <h2>Matrix</h2>
+            <p>Leady, set, GO!</p>
+        </div>
+        <div class="service-item">
+            <a href="./about"><img src="./images/aboutme.png" alt="About me"></a>
+            <h2>About me</h2>
+            <p>Learn more about how this website was made and who I am:)</p>
+        </div>
+        <div class="service-item">
+            <a href="./education"><img src="./images/education.jpg" alt="Education"></a>
+            <h2>Education</h2>
+            <p>Educatioal contents can be found here!</p>
+        </div>
+        <div class="service-item">
+            <img src="./images/contact.jpeg" alt="Product 3">
+            <h2>Contact Me</h2>
+            <p>If you want to support my work, or have any other inquaries, please contact at <a href = "mailto:675331f1-2e71-47dd-9b64-3ef0a6877065@slmail.me">Email</a> or via <a href="https://google.com">Form</a></p>
+        </div>
+    </section>
+    <div class="light-color">
+        <div class="parallax-3"></div>
+        <section class="contact">
+        </section>
+    </div>
+    <footer>
+        <div class="contact">
+            <a href="https://github.com/Joint55internal"><img src="./images/github-mark.png" alt="Logo" class="github-link"></a>
+            <a href="https://youtube.com/@Cusvt?si=WW0MH8QlssE1f9pr"><img src="./images/youtubelink.png" alt="Logo" class="github-link"></a>
+        </div>
+        <p>&copy; Cusvt. All Rights Reserved</p>
+    </footer>
+</body>
 </html>
