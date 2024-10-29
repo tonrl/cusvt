@@ -1,2 +1,2 @@
 # cusvt
-Example Website
+Example Website for personal use
